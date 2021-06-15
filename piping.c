@@ -38,7 +38,7 @@ void my_pipeline(char cmd[])
 		{
 			strcpy(command, p);
 			strncat(commList[commpos], command, 50);
-			strncat(commList[commpos], " ", 1);
+			strcat(commList[commpos], " "); //strncat(commList[commpos], " ", 1);
 		}
 
 		p = strtok(NULL, " \n");
